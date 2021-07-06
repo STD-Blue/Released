@@ -2,7 +2,7 @@
 using System.Drawing;
 using System;
 using System.Globalization;
-
+using Logging;
 using System.Collections.Generic;
 
 namespace NotesGUI
@@ -36,6 +36,9 @@ namespace NotesGUI
 
         private void InitializeComponent()
         {
+           
+           
+
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.searchTextBox = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();

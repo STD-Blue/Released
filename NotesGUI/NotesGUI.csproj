@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Logging">
+      <HintPath>..\..\..\..\Desktop\Logging\bin\Debug\netcoreapp3.1\Logging.dll</HintPath>
+    </Reference>
     <Reference Include="NotesDLL">
       <HintPath>..\..\..\..\Desktop\Notes.DLL-3a63b01298d60c4da9b5a61111fcb2248bf4999d\NotesDLL\NotesDLL\bin\Debug\NotesDLL.dll</HintPath>
     </Reference>

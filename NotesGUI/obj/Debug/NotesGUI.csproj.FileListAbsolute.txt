@@ -120,3 +120,5 @@ C:\Users\Gray\Source\Repos\Released2\NotesGUI\obj\Debug\uk\NotesGUI.resources.dl
 C:\Users\Gray\Source\Repos\Released2\NotesGUI\obj\Debug\NotesGUI.SelectedNote.en-US.resources
 C:\Users\Gray\Source\Repos\Released2\NotesGUI\obj\Debug\NotesGUI.SelectedNote.ru.resources
 C:\Users\Gray\Source\Repos\Released2\NotesGUI\obj\Debug\NotesGUI.SelectedNote.uk.resources
+C:\Users\Gray\Source\Repos\Released2\NotesGUI\bin\Debug\Logging.dll
+C:\Users\Gray\Source\Repos\Released2\NotesGUI\bin\Debug\Logging.pdb
