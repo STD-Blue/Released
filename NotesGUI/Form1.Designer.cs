@@ -2,7 +2,7 @@
 using System.Drawing;
 using System;
 using System.Globalization;
-using Logging;
+using Logging2;
 using System.Collections.Generic;
 
 namespace NotesGUI

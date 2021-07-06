@@ -1,0 +1,114 @@
+MESSAGE-06.07.2021 23:53:22,
+Localazible Цвет фона
+MESSAGE-06.07.2021 23:55:22,
+Localazible Цвет фона
+MESSAGE-06.07.2021 23:56:07,
+Localazible Цвет фона
+MESSAGE-06.07.2021 23:56:07,
+Localazible Изображение фона
+MESSAGE-06.07.2021 23:56:07,
+Localazible Язык
+MESSAGE-06.07.2021 23:56:07,
+Localazible Колір фону
+MESSAGE-06.07.2021 23:56:07,
+Localazible Зображенян фону
+MESSAGE-06.07.2021 23:56:07,
+Localazible Заметки
+MESSAGE-06.07.2021 23:56:07,
+Localazible Колір фону
+MESSAGE-06.07.2021 23:56:07,
+Localazible Зображенян фону
+MESSAGE-06.07.2021 23:56:07,
+Localazible Настройки
+MESSAGE-06.07.2021 23:56:07,
+Localazible Колір фону
+MESSAGE-06.07.2021 23:56:07,
+Localazible Зображенян фону
+MESSAGE-06.07.2021 23:56:07,
+Localazible Выход
+MESSAGE-06.07.2021 23:56:07,
+Localazible end
+MESSAGE-06.07.2021 23:56:07,
+Form1_Load end
+MESSAGE-06.07.2021 23:56:09,
+Start exitToolStripMenuItem_Click
+MESSAGE-06.07.2021 23:56:09,
+Trigger SaveAllNotes
+MESSAGE-06.07.2021 23:56:09,
+exitToolStripMenuItem_Click end
+MESSAGE-06.07.2021 23:56:09,
+CLOSE APP
+MESSAGE-06.07.2021 23:57:19,
+Init 
+MESSAGE-06.07.2021 23:57:20,
+Init Form1 end
+MESSAGE-06.07.2021 23:57:20,
+Start Form1_Load
+MESSAGE-06.07.2021 23:57:20,
+SaveNotes.txt - Exists
+MESSAGE-06.07.2021 23:57:20,
+SaveNotes.txt - not Empty
+MESSAGE-06.07.2021 23:57:20,
+Triger ReadNotesFromFile
+MESSAGE-06.07.2021 23:57:20,
+Localazible start
+MESSAGE-06.07.2021 23:57:20,
+Localazible Добавить
+MESSAGE-06.07.2021 23:57:20,
+Localazible Удалить
+MESSAGE-06.07.2021 23:57:20,
+Localazible Удалить все
+MESSAGE-06.07.2021 23:57:20,
+Localazible Цвет фона
+MESSAGE-06.07.2021 23:57:20,
+Localazible Изображение фона
+MESSAGE-06.07.2021 23:57:20,
+Localazible Язык
+MESSAGE-06.07.2021 23:57:20,
+Localazible Додати
+MESSAGE-06.07.2021 23:57:20,
+Localazible Видалити
+MESSAGE-06.07.2021 23:57:20,
+Localazible Видалити всі
+MESSAGE-06.07.2021 23:57:20,
+Localazible Колір фону
+MESSAGE-06.07.2021 23:57:20,
+Localazible Зображенян фону
+MESSAGE-06.07.2021 23:57:20,
+Localazible Заметки
+MESSAGE-06.07.2021 23:57:20,
+Localazible Додати
+MESSAGE-06.07.2021 23:57:20,
+Localazible Видалити
+MESSAGE-06.07.2021 23:57:20,
+Localazible Видалити всі
+MESSAGE-06.07.2021 23:57:20,
+Localazible Колір фону
+MESSAGE-06.07.2021 23:57:20,
+Localazible Зображенян фону
+MESSAGE-06.07.2021 23:57:20,
+Localazible Настройки
+MESSAGE-06.07.2021 23:57:20,
+Localazible Додати
+MESSAGE-06.07.2021 23:57:20,
+Localazible Видалити
+MESSAGE-06.07.2021 23:57:20,
+Localazible Видалити всі
+MESSAGE-06.07.2021 23:57:20,
+Localazible Колір фону
+MESSAGE-06.07.2021 23:57:20,
+Localazible Зображенян фону
+MESSAGE-06.07.2021 23:57:20,
+Localazible Выход
+MESSAGE-06.07.2021 23:57:20,
+Localazible end
+MESSAGE-06.07.2021 23:57:20,
+Form1_Load end
+MESSAGE-06.07.2021 23:57:21,
+Start exitToolStripMenuItem_Click
+MESSAGE-06.07.2021 23:57:21,
+Trigger SaveAllNotes
+MESSAGE-06.07.2021 23:57:21,
+exitToolStripMenuItem_Click end
+MESSAGE-06.07.2021 23:57:21,
+CLOSE APP
