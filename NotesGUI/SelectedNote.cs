@@ -23,6 +23,7 @@ namespace NotesGUI
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+            Manager.notes.Find(item => item.NoteName == File.ReadAllText("FindBtn.txt")).Text = textBox1.Text;
             File.WriteAllText("FindBtnText.txt", textBox1.Text);
         }
 
