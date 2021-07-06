@@ -33,9 +33,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="NotesDLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Desktop\Notes\NotesGUI\bin\Debug\NotesDLL.dll</HintPath>
+    <Reference Include="NotesDLL">
+      <HintPath>..\..\..\..\Desktop\Notes.DLL-3a63b01298d60c4da9b5a61111fcb2248bf4999d\NotesDLL\NotesDLL\bin\Debug\NotesDLL.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

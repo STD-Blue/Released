@@ -15,7 +15,7 @@ namespace NotesGUI
     {
         public string noteName { get; private set; }
         public int EmptyNote { get; private set; }
-
+        
         public Form1()
         {
             InitializeComponent();
@@ -49,6 +49,7 @@ namespace NotesGUI
             this.Visible = false;
             note.ShowDialog();
             this.Visible = true;
+           
         }
 
         private void notexText_KeyDown(object sender, KeyEventArgs e)
