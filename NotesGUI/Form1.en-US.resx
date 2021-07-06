@@ -118,6 +118,12 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="languageToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 20</value>
+  </data>
+  <data name="languageToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Language </value>
+  </data>
   <data name="enUSToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>106, 22</value>
   </data>
@@ -127,64 +133,46 @@
   <data name="ukToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>106, 22</value>
   </data>
-  <data name="languageToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 20</value>
-  </data>
-  <data name="languageToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Язык</value>
-  </data>
-  <data name="addToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>218, 22</value>
-  </data>
-  <data name="addToolStripMenuItem.Text" xml:space="preserve">
-    <value>Добавить</value>
-  </data>
-  <data name="deleteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>218, 22</value>
-  </data>
-  <data name="deleteToolStripMenuItem.Text" xml:space="preserve">
-    <value>Удалить</value>
-  </data>
-  <data name="deleteALLToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>218, 22</value>
-  </data>
-  <data name="deleteALLToolStripMenuItem.Text" xml:space="preserve">
-    <value>Удалить все</value>
-  </data>
   <data name="notesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 20</value>
+    <value>53, 20</value>
   </data>
   <data name="notesToolStripMenuItem.Text" xml:space="preserve">
-    <value>Заметки</value>
+    <value>Notes </value>
   </data>
-  <data name="backColorToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>182, 22</value>
+  <data name="addToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 22</value>
   </data>
-  <data name="backColorToolStripMenuItem.Text" xml:space="preserve">
-    <value>Цвет фона</value>
+  <data name="addToolStripMenuItem.Text" xml:space="preserve">
+    <value>Add </value>
   </data>
-  <data name="backImageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>182, 22</value>
+  <data name="deleteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 22</value>
   </data>
-  <data name="backImageToolStripMenuItem.Text" xml:space="preserve">
-    <value>Изображение фона</value>
+  <data name="deleteToolStripMenuItem.Text" xml:space="preserve">
+    <value>Delete </value>
+  </data>
+  <data name="deleteALLToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 22</value>
+  </data>
+  <data name="deleteALLToolStripMenuItem.Text" xml:space="preserve">
+    <value>DeleteALL </value>
   </data>
   <data name="settingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 20</value>
+    <value>64, 20</value>
   </data>
   <data name="settingsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Настройки</value>
+    <value>Settings </value>
   </data>
   <data name="exitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 20</value>
+    <value>41, 20</value>
   </data>
   <data name="exitToolStripMenuItem.Text" xml:space="preserve">
-    <value>Выход</value>
+    <value>Exit </value>
   </data>
   <data name="notexText.Text" xml:space="preserve">
-    <value>Введите название заметки</value>
+    <value>Enter note's name </value>
   </data>
   <data name="deleteNote.Text" xml:space="preserve">
-    <value>Введите название заметки</value>
+    <value>Enter note's name </value>
   </data>
 </root>

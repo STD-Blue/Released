@@ -63,10 +63,16 @@
     <Compile Include="SelectedNote.Designer.cs">
       <DependentUpon>SelectedNote.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Form1.en-US.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.ru.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.uk.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -78,7 +84,16 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SelectedNote.en-US.resx">
+      <DependentUpon>SelectedNote.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SelectedNote.resx">
+      <DependentUpon>SelectedNote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectedNote.ru.resx">
+      <DependentUpon>SelectedNote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectedNote.uk.resx">
       <DependentUpon>SelectedNote.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">

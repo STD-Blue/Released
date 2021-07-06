@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using NotesDLL;
+using System.Globalization;
 
 namespace NotesGUI
 {
@@ -19,6 +20,21 @@ namespace NotesGUI
             InitializeComponent();
             textBox1.Text = Manager.TakeTextNote(File.ReadAllText("FindBtn.txt"));
             this.Focus();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SelectedNote));
+
+            CultureInfo ci = new CultureInfo(File.ReadAllText("LastLanguage.txt"));
+            foreach (ToolStripItem c in menuStrip1.Items)
+            {
+                foreach (ToolStripItem item in fontToolStripMenuItem.DropDownItems)
+                {
+                    resources.ApplyResources(item, item.Name, ci);
+                }
+                foreach (ToolStripItem item in exitToolStripMenuItem.DropDownItems)
+                {
+                    resources.ApplyResources(item, item.Name, ci);
+                }
+                resources.ApplyResources(c, c.Name, ci);
+            }
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

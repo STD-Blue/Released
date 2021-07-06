@@ -9,10 +9,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using NotesDLL;
 using System.IO;
+using System.Globalization;
+
 namespace NotesGUI
 {
     public partial class Form1 : Form
     {
+        System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
         public string noteName { get; private set; }
         public int EmptyNote { get; private set; }
         
@@ -147,7 +150,26 @@ namespace NotesGUI
                     }
                 }
             }
-          
+           
+
+            CultureInfo ci = new CultureInfo(File.ReadAllText("LastLanguage.txt"));
+            foreach (ToolStripItem c in menuStrip1.Items)
+            {
+                foreach (ToolStripItem item in addToolStripMenuItem.DropDownItems)
+                {
+                    resources.ApplyResources(item, item.Name, ci);
+                }
+                foreach (ToolStripItem item in notesToolStripMenuItem.DropDownItems)
+                {
+                    resources.ApplyResources(item, item.Name, ci);
+                }
+                foreach (ToolStripItem item in settingsToolStripMenuItem.DropDownItems)
+                {
+                    resources.ApplyResources(item, item.Name, ci);
+                }
+
+                resources.ApplyResources(c, c.Name, ci);
+            }
 
         }
 
@@ -256,6 +278,31 @@ namespace NotesGUI
                 }
             }
            
+        }
+        
+
+        private void ChangeLanguage(object sender, EventArgs e)
+        {
+            CultureInfo ci = new CultureInfo((sender as ToolStripMenuItem).Text);
+            File.WriteAllText("LastLanguage.txt", ci.ToString());
+
+            foreach (ToolStripItem c in menuStrip1.Items)
+            {
+                foreach (ToolStripItem item in addToolStripMenuItem.DropDownItems)
+                {
+                    resources.ApplyResources(item, item.Name, ci);
+                }
+                foreach (ToolStripItem item in notesToolStripMenuItem.DropDownItems)
+                {
+                    resources.ApplyResources(item, item.Name, ci);
+                }
+                foreach (ToolStripItem item in settingsToolStripMenuItem.DropDownItems)
+                {
+                    resources.ApplyResources(item, item.Name, ci);
+                }
+
+                resources.ApplyResources(c, c.Name, ci);
+            }
         }
     }
 }

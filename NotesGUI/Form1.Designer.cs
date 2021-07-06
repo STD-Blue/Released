@@ -34,19 +34,19 @@ namespace NotesGUI
         /// содержимое этого метода с помощью редактора кода.
         /// </summary>
 
-        System.ComponentModel.ComponentResourceManager resources;
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.searchTextBox = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.languageToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.arToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.esToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.ruToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.enUSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ruToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ukToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.notesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteALLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.backColorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.backImageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -54,169 +54,131 @@ namespace NotesGUI
             this.searchButton = new System.Windows.Forms.Button();
             this.notexText = new System.Windows.Forms.TextBox();
             this.deleteNote = new System.Windows.Forms.TextBox();
-            this.deleteALLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // searchTextBox
             // 
-            this.searchTextBox.Location = new System.Drawing.Point(127, 37);
+            resources.ApplyResources(this.searchTextBox, "searchTextBox");
             this.searchTextBox.Name = "searchTextBox";
-            this.searchTextBox.Size = new System.Drawing.Size(213, 20);
-            this.searchTextBox.TabIndex = 2;
             // 
             // menuStrip1
             // 
+            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.languageToolStripMenuItem1,
             this.notesToolStripMenuItem,
             this.settingsToolStripMenuItem,
             this.exitToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(524, 24);
-            this.menuStrip1.TabIndex = 3;
             // 
             // languageToolStripMenuItem1
             // 
+            resources.ApplyResources(this.languageToolStripMenuItem1, "languageToolStripMenuItem1");
             this.languageToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.arToolStripMenuItem1,
-            this.esToolStripMenuItem1,
-            this.ruToolStripMenuItem1,
-            this.enUSToolStripMenuItem});
+            this.enUSToolStripMenuItem,
+            this.ruToolStripMenuItem,
+            this.ukToolStripMenuItem});
             this.languageToolStripMenuItem1.Name = "languageToolStripMenuItem1";
-            this.languageToolStripMenuItem1.Size = new System.Drawing.Size(71, 20);
-            this.languageToolStripMenuItem1.Text = "Language";
-            // 
-            // arToolStripMenuItem1
-            // 
-            this.arToolStripMenuItem1.Name = "arToolStripMenuItem1";
-            this.arToolStripMenuItem1.Size = new System.Drawing.Size(106, 22);
-            this.arToolStripMenuItem1.Text = "ar";
-            // 
-            // esToolStripMenuItem1
-            // 
-            this.esToolStripMenuItem1.Name = "esToolStripMenuItem1";
-            this.esToolStripMenuItem1.Size = new System.Drawing.Size(106, 22);
-            this.esToolStripMenuItem1.Text = "es";
-            // 
-            // ruToolStripMenuItem1
-            // 
-            this.ruToolStripMenuItem1.Name = "ruToolStripMenuItem1";
-            this.ruToolStripMenuItem1.Size = new System.Drawing.Size(106, 22);
-            this.ruToolStripMenuItem1.Text = "ru";
             // 
             // enUSToolStripMenuItem
             // 
+            resources.ApplyResources(this.enUSToolStripMenuItem, "enUSToolStripMenuItem");
             this.enUSToolStripMenuItem.Name = "enUSToolStripMenuItem";
-            this.enUSToolStripMenuItem.Size = new System.Drawing.Size(106, 22);
-            this.enUSToolStripMenuItem.Text = "en-US";
+            this.enUSToolStripMenuItem.Click += new System.EventHandler(this.ChangeLanguage);
+            // 
+            // ruToolStripMenuItem
+            // 
+            resources.ApplyResources(this.ruToolStripMenuItem, "ruToolStripMenuItem");
+            this.ruToolStripMenuItem.Name = "ruToolStripMenuItem";
+            this.ruToolStripMenuItem.Click += new System.EventHandler(this.ChangeLanguage);
+            // 
+            // ukToolStripMenuItem
+            // 
+            resources.ApplyResources(this.ukToolStripMenuItem, "ukToolStripMenuItem");
+            this.ukToolStripMenuItem.Name = "ukToolStripMenuItem";
+            this.ukToolStripMenuItem.Click += new System.EventHandler(this.ChangeLanguage);
             // 
             // notesToolStripMenuItem
             // 
+            resources.ApplyResources(this.notesToolStripMenuItem, "notesToolStripMenuItem");
             this.notesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addToolStripMenuItem,
             this.deleteToolStripMenuItem,
             this.deleteALLToolStripMenuItem});
             this.notesToolStripMenuItem.Name = "notesToolStripMenuItem";
-            this.notesToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
-            this.notesToolStripMenuItem.Text = "Notes";
             // 
             // addToolStripMenuItem
             // 
+            resources.ApplyResources(this.addToolStripMenuItem, "addToolStripMenuItem");
             this.addToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.addToolStripMenuItem.Name = "addToolStripMenuItem";
-            this.addToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.F1)));
-            this.addToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
-            this.addToolStripMenuItem.Text = "Add";
             this.addToolStripMenuItem.Click += new System.EventHandler(this.addToolStripMenuItem_Click);
             // 
             // deleteToolStripMenuItem
             // 
+            resources.ApplyResources(this.deleteToolStripMenuItem, "deleteToolStripMenuItem");
             this.deleteToolStripMenuItem.BackColor = System.Drawing.Color.Red;
             this.deleteToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.Delete)));
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
-            this.deleteToolStripMenuItem.Text = "Delete";
             this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
+            // 
+            // deleteALLToolStripMenuItem
+            // 
+            resources.ApplyResources(this.deleteALLToolStripMenuItem, "deleteALLToolStripMenuItem");
+            this.deleteALLToolStripMenuItem.BackColor = System.Drawing.Color.Maroon;
+            this.deleteALLToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.deleteALLToolStripMenuItem.Name = "deleteALLToolStripMenuItem";
+            this.deleteALLToolStripMenuItem.Click += new System.EventHandler(this.deleteALLToolStripMenuItem_Click);
             // 
             // settingsToolStripMenuItem
             // 
+            resources.ApplyResources(this.settingsToolStripMenuItem, "settingsToolStripMenuItem");
             this.settingsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.backColorToolStripMenuItem,
             this.backImageToolStripMenuItem});
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
-            this.settingsToolStripMenuItem.Text = "Settings";
             // 
             // backColorToolStripMenuItem
             // 
+            resources.ApplyResources(this.backColorToolStripMenuItem, "backColorToolStripMenuItem");
             this.backColorToolStripMenuItem.Name = "backColorToolStripMenuItem";
-            this.backColorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.backColorToolStripMenuItem.Text = "BackColor";
             this.backColorToolStripMenuItem.Click += new System.EventHandler(this.backColorToolStripMenuItem_Click);
             // 
             // backImageToolStripMenuItem
             // 
+            resources.ApplyResources(this.backImageToolStripMenuItem, "backImageToolStripMenuItem");
             this.backImageToolStripMenuItem.Name = "backImageToolStripMenuItem";
-            this.backImageToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.backImageToolStripMenuItem.Text = "BackImage";
             this.backImageToolStripMenuItem.Click += new System.EventHandler(this.backImageToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
+            resources.ApplyResources(this.exitToolStripMenuItem, "exitToolStripMenuItem");
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
-            this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // searchButton
             // 
-            this.searchButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.searchButton.Location = new System.Drawing.Point(348, 37);
+            resources.ApplyResources(this.searchButton, "searchButton");
             this.searchButton.Name = "searchButton";
-            this.searchButton.Size = new System.Drawing.Size(75, 20);
-            this.searchButton.TabIndex = 1;
-            this.searchButton.Text = "Поиск";
             this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
             // 
             // notexText
             // 
-            this.notexText.Location = new System.Drawing.Point(127, 222);
+            resources.ApplyResources(this.notexText, "notexText");
             this.notexText.Name = "notexText";
-            this.notexText.Size = new System.Drawing.Size(213, 20);
-            this.notexText.TabIndex = 4;
-            this.notexText.Text = "Enter note\'s name";
-            this.notexText.Visible = false;
             this.notexText.KeyDown += new System.Windows.Forms.KeyEventHandler(this.notexText_KeyDown);
             // 
             // deleteNote
             // 
-            this.deleteNote.Location = new System.Drawing.Point(127, 248);
+            resources.ApplyResources(this.deleteNote, "deleteNote");
             this.deleteNote.Name = "deleteNote";
-            this.deleteNote.Size = new System.Drawing.Size(213, 20);
-            this.deleteNote.TabIndex = 5;
-            this.deleteNote.Text = "Enter note\'s name";
-            this.deleteNote.Visible = false;
-            // 
-            // deleteALLToolStripMenuItem
-            // 
-            this.deleteALLToolStripMenuItem.BackColor = System.Drawing.Color.Maroon;
-            this.deleteALLToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.deleteALLToolStripMenuItem.Name = "deleteALLToolStripMenuItem";
-            this.deleteALLToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.Shift) 
-            | System.Windows.Forms.Keys.Delete)));
-            this.deleteALLToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
-            this.deleteALLToolStripMenuItem.Text = "DeleteALL";
-            this.deleteALLToolStripMenuItem.Click += new System.EventHandler(this.deleteALLToolStripMenuItem_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(524, 661);
             this.Controls.Add(this.deleteNote);
             this.Controls.Add(this.notexText);
             this.Controls.Add(this.searchButton);
@@ -254,10 +216,6 @@ namespace NotesGUI
         #endregion
         private MenuStrip menuStrip1;
         private ToolStripMenuItem languageToolStripMenuItem1;
-        private ToolStripMenuItem arToolStripMenuItem1;
-        private ToolStripMenuItem esToolStripMenuItem1;
-        private ToolStripMenuItem ruToolStripMenuItem1;
-        private ToolStripMenuItem enUSToolStripMenuItem;
         private ToolStripMenuItem notesToolStripMenuItem;
         private ToolStripMenuItem addToolStripMenuItem;
         private ToolStripMenuItem deleteToolStripMenuItem;
@@ -269,6 +227,9 @@ namespace NotesGUI
         private ToolStripMenuItem backImageToolStripMenuItem;
         private ToolStripMenuItem exitToolStripMenuItem;
         private ToolStripMenuItem deleteALLToolStripMenuItem;
+        private ToolStripMenuItem enUSToolStripMenuItem;
+        private ToolStripMenuItem ruToolStripMenuItem;
+        private ToolStripMenuItem ukToolStripMenuItem;
     }
 }
 
